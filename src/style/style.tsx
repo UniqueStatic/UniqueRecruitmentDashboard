@@ -80,7 +80,8 @@ const styles: StyleRulesCallback = (theme: Theme) => ({
     column: {
         width: 300,
         margin: "0 8px",
-        padding: theme.spacing.unit
+        padding: theme.spacing.unit,
+        paddingTop: 0
     },
     columnTitle: {
         textAlign: "center",
