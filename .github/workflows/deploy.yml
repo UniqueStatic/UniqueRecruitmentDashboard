@@ -39,9 +39,9 @@ jobs:
       - run: yarn vercel whoami --token ${{ secrets.VERCEL_TOKEN }}
         name: Who am I
 
-      - run: yarn vercel --token ${{ secrets.VERCEL_TOKEN }}
+      - run: yarn vercel -c --token ${{ secrets.VERCEL_TOKEN }}
         name: Deploy to preview env
 
-      - run: yarn vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
+      - run: yarn vercel -c --prod --token ${{ secrets.VERCEL_TOKEN }}
         if: ${{ success() }}
         name: Deploy to production env
